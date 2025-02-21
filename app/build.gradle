@@ -1,17 +1,20 @@
 plugins {
     id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
 
 android {
     namespace 'codepath.demos.helloworlddemo'
 
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
-        minSdkVersion 23
-        targetSdk 33
+        minSdkVersion 29
+        targetSdk 35
     }
-}
 
-dependencies {
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 }
